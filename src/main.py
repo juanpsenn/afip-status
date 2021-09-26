@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from starlette.responses import RedirectResponse
 
-from v1.routes import status
+from src.v1.routes import status
 
 app = FastAPI()
 app.include_router(status.router)

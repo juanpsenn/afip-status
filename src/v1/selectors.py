@@ -1,5 +1,5 @@
-from v1.helpers.clients import get_client
-from v1.helpers.serializers import fedummy_serializer
+from src.v1.helpers.clients import get_client
+from src.v1.helpers.serializers import fedummy_serializer
 
 
 def get_current_status():

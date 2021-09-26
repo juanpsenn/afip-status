@@ -1,7 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from v1.selectors import get_current_status
+from src.v1.selectors import get_current_status
 
 router = APIRouter()
 
