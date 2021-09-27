@@ -12,6 +12,6 @@ class Status(BaseModel):
     auth: str
 
 
-@router.get('/v1/status', tags=['status'], response_model=Status)
+@router.get("/v1/status", tags=["status"], response_model=Status)
 async def read_status():
     return await get_current_status()
