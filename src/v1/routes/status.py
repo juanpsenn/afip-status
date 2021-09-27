@@ -14,4 +14,4 @@ class Status(BaseModel):
 
 @router.get('/v1/status', tags=['status'], response_model=Status)
 async def read_status():
-    return get_current_status()
+    return await get_current_status()
