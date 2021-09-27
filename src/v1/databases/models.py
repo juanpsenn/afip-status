@@ -10,4 +10,4 @@ class Status(Model):
     app = fields.CharField(2)
     db = fields.CharField(2)
     auth = fields.CharField(2)
-    fetched_at = fields.DatetimeField(default=datetime.now(TZ_AR))
+    fetched_at = fields.DatetimeField(default=lambda: datetime.now(TZ_AR))
